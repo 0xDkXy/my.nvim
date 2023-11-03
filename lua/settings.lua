@@ -1,6 +1,6 @@
 -- config for treesitter
 require 'nvim-treesitter.configs'.setup{
-    ensure_installed = {"c", "cpp", "python", "lua", "vim", "help"},
+    ensure_installed = {"c", "cpp", "python", "lua", "vim"},
     sync_install = false,
     auto_install = true,
     highlight = {
@@ -28,7 +28,7 @@ require("nvim-treesitter.install").command_extra_args = {
 
 
 -- nvim-cmp
-local cmp = require 'cmp'
+local cmp = require("cmp")
 
 cmp.setup({
     snippet = {
