@@ -7,6 +7,7 @@ require("lazy").setup({
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
     },
+    "wakatime/vim-wakatime",
     "nvim-treesitter/nvim-treesitter-textobjects",
     "neovim/nvim-lspconfig",
     "williamboman/mason.nvim",
@@ -29,5 +30,15 @@ require("lazy").setup({
 
     "chentoast/marks.nvim",
     "folke/flash.nvim",
+
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
+            "MunifTanjim/nui.nvim",
+        }
+    }
 })
 
